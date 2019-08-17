@@ -16,8 +16,8 @@ import (
 	"k8s.io/client-go/rest"
 	"k8s.io/client-go/tools/clientcmd"
 
-	"github.com/uswitch/sqs-autoscaler-controller/pkg/crd"
-	"github.com/uswitch/sqs-autoscaler-controller/pkg/scaler"
+	"github.com/sureshamk/sqs-autoscaler-controller/pkg/crd"
+	"github.com/sureshamk/sqs-autoscaler-controller/pkg/scaler"
 )
 
 type options struct {

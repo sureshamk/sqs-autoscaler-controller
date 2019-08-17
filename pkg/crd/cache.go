@@ -48,7 +48,7 @@ func NewCache(client *rest.RESTClient, syncInterval time.Duration) *Cache {
 	store := cache.NewIndexer(cache.DeletionHandlingMetaNamespaceKeyFunc, cache.Indexers{})
 	c.Store = store
 	config := &cache.Config{
-		Queue:            cache.NewDeltaFIFO(cache.MetaNamespaceKeyFunc, nil, store),
+		Queue:            cache.NewDeltaFIFO(cache.MetaNamespaceKeyFunc, store),
 		ListerWatcher:    listWatch,
 		ObjectType:       &SqsAutoScaler{},
 		FullResyncPeriod: syncInterval,

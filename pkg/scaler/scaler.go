@@ -7,7 +7,7 @@ import (
 
 	log "github.com/Sirupsen/logrus"
 	"github.com/rcrowley/go-metrics"
-	"github.com/uswitch/sqs-autoscaler-controller/pkg/crd"
+	"github.com/sureshamk/sqs-autoscaler-controller/pkg/crd"
 	"github.com/vmg/backoff"
 	appsv1 "k8s.io/api/apps/v1beta1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
